@@ -1,0 +1,103 @@
+/* Geral */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    list-style: none;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #48c78e;
+    padding: 30px;
+    font-weight: bold;
+  }
+  
+  section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section form{
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 10px;
+  }
+
+  section form input{
+    width: 100%;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  main{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  #menu-hamburguer {
+    font-size: 2em;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #menu-lista {
+    list-style: none;
+    display: flex;
+  }
+  
+  #menu-lista li {
+    margin-right: 20px;
+  }
+  
+  #menu-lista li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+  }
+  
+  /* Animação suave para o menu expansivo */
+  #menu-lista {
+    transition: all 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    #menu-lista {
+      display: none;
+      flex-direction: column;
+      background-color: #48c78e;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+    }
+  
+    #menu-hamburguer {
+      display: block;
+    }
+
+    section form{
+        width: 100%;
+    }
+
+    section form input{
+        width: 100%;
+    }
+  }

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saúde e Cuidados Pessoais</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav id="menu">
+            <div id="menu-hamburguer" onclick="toggleMenu()">&#9776;</div>
+            <ul id="menu-lista">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#alimentacao">Alimentação</a></li>
+            <li><a href="#exercicios">Exercícios</a></li>
+            <li><a href="#saude-mental">Saúde Mental</a></li>
+            <li><a href="#calculadora-imc">Calculadora de IMC</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio">
+            <h1>Saúde e Cuidados Pessoais</h1>
+            <p> <strong>A Importância de Cuidar da Sua Saúde Física e Mental</strong>
+                <br><br>
+                Cuidar da saúde vai além de simplesmente evitar doenças. Trata-se de promover o bem-estar em todas as dimensões da vida. A saúde física e mental estão intimamente conectadas, e ambas impactam diretamente sua qualidade de vida. Práticas simples, como adotar uma alimentação equilibrada, praticar atividades físicas regulares e dedicar tempo para cuidar da mente, podem fazer uma diferença significativa no seu dia a dia.
+                <br><br>
+                Quando damos atenção à nossa saúde física, fortalecemos o corpo, melhoramos a imunidade e aumentamos a disposição para enfrentar os desafios diários. Da mesma forma, cuidar da saúde mental ajuda a reduzir o estresse, melhora o humor e promove a clareza mental, criando um equilíbrio necessário para viver plenamente.
+                <br><br>
+                Explore nossas dicas, ferramentas e informações para cultivar um estilo de vida saudável e alcançar o bem-estar que você merece!</p>
+        </section>
+
+        <section id="calculadora-imc">
+            <h2>Calculadora de IMC</h2>
+            <p><strong>Calcule seu IMC:</strong></p>
+            <form onsubmit="calcularIMC(); return false;">
+                <div class="peso">
+                    <label for="peso">Peso (kg):</label>
+                    <input type="number" id="peso" required>
+                </div>
+                <div class="altura">
+                    <label for="altura">Altura (m):</label>
+                    <input type="number" id="altura" step="0.01" required>
+                </div>
+                <button type="submit">Calcular</button>
+            </form>
+            <p id="resultado"></p>
+        </section>
+
+        <section id="alimentacao">
+            <h2>Alimentação Saudável</h2>
+            <p><strong>Alimentação Saudável: Dicas para Manter uma Dieta Equilibrada e Nutritiva</strong>
+                <br><br>
+                Uma alimentação saudável é a base para o bem-estar e a saúde a longo prazo. Manter uma dieta equilibrada e nutritiva pode parecer um desafio em meio à rotina agitada, mas com algumas orientações práticas, é possível adotar hábitos alimentares que beneficiam o corpo e a mente.
+                <br><br>
+                Aqui estão algumas dicas essenciais para manter uma alimentação saudável:
+            </p>
+            <ol>
+                <li><strong>Variedade é a chave:</strong> Inclua uma diversidade de alimentos em suas refeições. Frutas, legumes, grãos integrais, proteínas magras e gorduras saudáveis devem estar presentes no seu prato diariamente.</li>
+            
+                <li><strong>Controle as porções:</strong> Comer com moderação é importante para evitar o excesso de calorias. Escute os sinais de fome e saciedade do seu corpo e evite exageros, principalmente com alimentos ricos em açúcares e gorduras.</li>
+            
+                <li><strong>Hidrate-se adequadamente:</strong> A água é essencial para o bom funcionamento do organismo. Beba ao menos 2 litros de água por dia para manter-se hidratado e garantir que o corpo funcione de forma eficiente.</li>
+            
+                <li><strong>Evite alimentos ultraprocessados:</strong> Produtos industrializados geralmente contêm altos níveis de açúcar, sal e gorduras não saudáveis. Sempre que possível, prefira alimentos frescos e naturais.</li>
+            
+                <li><strong>Inclua fibras na dieta:</strong> Alimentos ricos em fibras, como cereais integrais, frutas e verduras, ajudam a regular o sistema digestivo, controlam o apetite e contribuem para a saúde intestinal.</li>
+            
+                <li><strong>Coma com atenção:</strong> Tente fazer suas refeições em ambientes tranquilos e mastigue devagar. Isso ajuda na digestão e permite que o corpo perceba quando está satisfeito, evitando o consumo excessivo de alimentos.</li>
+            </ol>
+            <p>
+            Adotar uma alimentação balanceada não significa abrir mão do prazer à mesa, mas sim fazer escolhas que alimentam o corpo de maneira saudável e prazerosa. Pequenas mudanças na sua dieta podem gerar grandes benefícios à saúde e aumentar a sua qualidade de vida.
+            </p>
+        </section>
+
+        <section id="exercicios">
+            <h2>Exercícios Físicos: Atividades Recomendadas para Iniciantes, Intermediários e Avançados</h2>
+  
+            <p>A prática regular de exercícios físicos é essencial para manter o corpo saudável e prevenir uma série de doenças. No entanto, escolher o tipo de atividade e a intensidade adequada para o seu nível pode fazer toda a diferença no sucesso da sua jornada fitness. Aqui estão algumas recomendações para diferentes níveis de condicionamento:</p>
+          
+            <h3>Iniciantes: Começando Devagar e Com Consistência</h3>
+            <p>Para quem está começando, o foco deve ser em criar o hábito de se movimentar. Atividades leves e de baixo impacto são ideais:</p>
+            <ul>
+              <li><strong>Caminhada</strong>: 30 minutos por dia, em ritmo moderado.</li>
+              <li><strong>Alongamentos</strong>: Aumentam a flexibilidade e evitam lesões.</li>
+              <li><strong>Yoga leve</strong>: Para fortalecer o corpo e melhorar a postura, enquanto acalma a mente.</li>
+              <li><strong>Treino funcional leve</strong>: Movimentos simples com o peso do corpo, como agachamentos e flexões.</li>
+            </ul>
+          
+            <h3>Intermediários: Aumentando a Intensidade e a Variedade</h3>
+            <p>Quem já possui um nível básico de condicionamento físico pode explorar atividades mais desafiadoras, visando o aumento da força e da resistência:</p>
+            <ul>
+              <li><strong>Corrida</strong>: De 3 a 5 vezes por semana, alternando entre intensidades leves e moderadas.</li>
+              <li><strong>Treinamento com pesos</strong>: Focar em grandes grupos musculares, aumentando gradualmente a carga.</li>
+              <li><strong>Aulas de circuito ou HIIT</strong>: Intervalos de alta intensidade para aumentar o gasto calórico.</li>
+              <li><strong>Natação ou ciclismo</strong>: Atividades que melhoram a capacidade cardiovascular e a resistência muscular.</li>
+            </ul>
+          
+            <h3>Avançados: Desafios Constantes e Treinos Específicos</h3>
+            <p>Para aqueles que já têm um nível avançado de condicionamento, o objetivo é aprimorar ainda mais a performance:</p>
+            <ul>
+              <li><strong>Treinamento de força avançado</strong>: Foco em levantamento de peso, força máxima e hipertrofia muscular.</li>
+              <li><strong>Corridas de longa distância</strong>: Maratonas ou provas de resistência.</li>
+              <li><strong>Crossfit ou HIIT avançado</strong>: Para aumentar a capacidade de trabalho físico e a explosão muscular.</li>
+              <li><strong>Treinamento funcional avançado</strong>: Incorporando exercícios que melhoram a mobilidade, força e resistência de forma integrada.</li>
+            </ul>
+          
+            <p>Independentemente do nível, o importante é manter a consistência e sempre respeitar os limites do corpo. Consultar um profissional de educação física pode ajudar a montar um plano personalizado e eficiente.</p>
+        </section>
+
+        <section id="saude-mental">
+            <h2>Saúde Mental: Cuide da Sua Saúde Emocional com Técnicas de Meditação e Gerenciamento de Estresse</h2>
+  
+            <p>A saúde mental é tão importante quanto a física, e cuidar da mente é essencial para lidar com os desafios da vida cotidiana. Incorporar técnicas de relaxamento e estratégias para o gerenciamento de estresse pode transformar sua qualidade de vida e promover um equilíbrio emocional mais estável.</p>
+
+            <h3>Meditação: Encontre a Paz Interior</h3>
+            <p>A meditação é uma prática milenar que ajuda a acalmar a mente, reduzir o estresse e aumentar a concentração. Aqui estão algumas formas de começar:</p>
+            <ul>
+                <li><strong>Meditação guiada</strong>: Use aplicativos ou vídeos para guiar suas sessões, especialmente se for iniciante.</li>
+                <li><strong>Atenção plena (mindfulness)</strong>: Foque no momento presente, seja durante uma atividade diária ou em uma sessão de meditação.</li>
+                <li><strong>Respiração consciente</strong>: Tente exercícios de respiração profunda para relaxar o corpo e a mente em situações de estresse.</li>
+            </ul>
+
+            <p>Dedicar alguns minutos por dia à meditação pode melhorar sua clareza mental, reduzir a ansiedade e promover um senso geral de bem-estar.</p>
+
+            <h3>Gerenciamento de Estresse: Estratégias Simples e Eficazes</h3>
+            <p>O estresse faz parte da vida, mas aprender a controlá-lo pode evitar problemas de saúde a longo prazo. Algumas práticas úteis incluem:</p>
+            <ul>
+                <li><strong>Organização e planejamento</strong>: Distribua suas tarefas de forma equilibrada para evitar sobrecarga.</li>
+                <li><strong>Exercícios físicos</strong>: Além de benefícios físicos, atividades como caminhada, ioga ou natação ajudam a reduzir os níveis de estresse.</li>
+                <li><strong>Lazer e hobbies</strong>: Reserve tempo para fazer o que você ama, seja ouvir música, ler ou praticar um hobby criativo.</li>
+                <li><strong>Desconexão digital</strong>: Tire um tempo longe das telas e redes sociais para evitar a sobrecarga de informações.</li>
+            </ul>
+
+            <p>Cuidar da saúde mental exige paciência e prática, mas com o tempo, as técnicas de meditação e gerenciamento de estresse podem trazer tranquilidade e equilíbrio emocional para sua vida.</p>
+        </section>
+
+    </main>
+
+    <script>
+
+        function toggleMenu() {
+        const menuLista = document.getElementById('menu-lista');
+        if (menuLista.style.display === 'flex') {
+            menuLista.style.display = 'none';
+        } else {
+            menuLista.style.display = 'flex';
+        }
+        }
+
+        function calcularIMC() {
+        const peso = document.getElementById('peso').value;
+        const altura = document.getElementById('altura').value;
+        const imc = (peso / (altura * altura)).toFixed(2);
+        let classificacao = '';
+
+        if (imc < 18.5) classificacao = 'Baixo Peso';
+        else if (imc < 24.9) classificacao = 'Peso Normal';
+        else if (imc < 29.9) classificacao = 'Sobrepeso';
+        else classificacao = 'Obesidade';
+
+        document.getElementById('resultado').textContent = `Seu IMC é ${imc} (${classificacao})`;
+        }
+
+    </script>
+  
+</body>
